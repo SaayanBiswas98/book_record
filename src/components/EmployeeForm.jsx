@@ -38,7 +38,7 @@ export const EmployeeForm = () => {
 
             <div className="d-flex my-5 justify-content-between">
                 <button type="button" className="btn btn-outline-secondary" onClick={() => navigate("/")}>Back</button>
-                <h1 className="text-center">{id ? "Edit" : "Add new"} Employee</h1>
+                <h1 className="text-center">{id ? "Edit" : "Add new"} Book</h1>
                 <div />
             </div>
 
