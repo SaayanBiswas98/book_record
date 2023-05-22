@@ -11,13 +11,13 @@ export const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarColor03">
-                        <ul className="navbar-nav me-auto">
+                    <div id="navbarColor03">
+                        <ul>
 
                         </ul>
 
                         <button
-                            className="btn btn-outline-secondary my-2 my-sm-0"
+                            className="btn btn-success"
                             onClick={() => navigate("/create-employee")}
                         >
                             Create Book record

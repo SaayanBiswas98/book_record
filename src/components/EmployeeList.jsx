@@ -1,6 +1,7 @@
 import { EmployeeItem } from './EmployeeItem';
 import { useEffect, useState } from 'react';
 import { getListEmployees } from '../service/localstorage';
+import './Employee.css';
 
 export const EmployeeList = () => {
     const [employees, setEmployees] = useState([]);
@@ -15,15 +16,15 @@ export const EmployeeList = () => {
 
             {
                 employees.length > 0 ? (
-                    <div className="card bg-secondary p-3">
+                    <div className="card bg-secondary p-3 overflow-x-auto col-12 mobile">
                         <table className="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">Book name</th>
-                                    <th scope="col">Author</th>
-                                    <th scope="col">ISBN NUMBER</th>
-                                    <th scope="col">Year Published</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col-2">Book name</th>
+                                    <th scope="col-2">Author</th>
+                                    <th scope="col-2">ISBN NUMBER</th>
+                                    <th scope="col-2">Year Published</th>
+                                    <th scope="col-2">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
